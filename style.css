@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  position: relative;
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 14px;
+}
+
+.flex-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Add object-fit to ensure image aspect ratio is maintained */
+}
+
+/* Media query for maximum width of 480px */
+@media (max-width: 480px) {
+  .flex-item {
+    flex-basis: 100%; /* Set flex-basis to 100% to span full width on smaller screens */
+  }
+}
+
+
+header {
+  position: relative;
+  height: 200px;
+  background-image: url("produk/header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: black;
+}
+.pagination {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.pagination a {
+margin: 0 10px;
+padding: 5px 10px;
+border: 1px solid #333;
+border-radius: 3px;
+color: #333;
+text-decoration: none;
+position: relative;
+}
+
+.pagination a.active {
+background-color: #e8a317;
+color: #fff;
+}
+
+.pagination a.active:before {
+content: '';
+position: absolute;
+top: -5px;
+left: 50%;
+transform: translateX(-50%);
+border: 5px solid transparent;
+border-bottom: 5px solid #333;
+}
+
+.pagination a:hover {
+background-color: #fff380;
+}
+
+.pagination a:not(.active):hover:before {
+border-bottom-color: #eee;
+transition: border-bottom-color 0.2s ease-in-out;
+}
+
+.pagination .prev,
+.pagination .next {
+margin: 0 10px;
+padding: 5px 10px;
+background-color: #e8a317;
+color: #333;
+border: none;
+}
+
+.pagination .prev:hover,
+.pagination .next:hover {
+background-color: #fff380;
+color: #333;
+}
+
+
+/* Tambahkan aturan untuk footer */
+footer {
+  background-color: #cc3737; /* Warna merah lembut */
+  padding: 40px;
+  text-align: center;
+  margin: 10px;
+}
+
+footer p {
+  color: white; /* Warna teks putih */
+  margin: 0;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 800px;
+  right: 40px;
+  width: 80px;
+  height: 80px;
+  background: url(whatsapp.png);
+  background-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.scrollTop.active{
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1;   
+}

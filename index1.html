@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>KATALOG PRODUK UKM MART</title>
+
+</head>
+<body>
+<header>
+  <a href="https://api.whatsapp.com/send/?phone=6282311334116&text&type=phone_number&app_absent=0"><div class="scrollTop" onclick="scrollToTop()"></div>
+  </a>
+</header>
+<br>
+    <div class="header-content">
+        <h1>KATALOG PRODUK UKM MART</h1>
+        <p>Selamat datang di katalog produk UKM Mart.</p>
+    </div>
+<br>
+<div class="flex-container">
+    <div class="flex-item">
+      <img src="produk/1.jpg" alt="Item 1">
+      <div class="info">
+        <div class="name">Tanawan Ikan Tuna Garo Rica</div>
+        <div class="price">Rp42.000</div>
+      </div>
+    </div>
+    <div class="flex-item">
+      <img src="produk/2.jpg" alt="Item 2">
+      <div class="info">
+        <div class="name">Ifamoy BBR Kenari</div>
+        <div class="price">Rp20.000</div>
+      </div>
+    </div>
+
+    <div class="flex-item">
+      <img src="produk/3.jpg" alt="Item 3">
+      <div class="info">
+        <div class="name">Tanawan Teri Krispy</div>
+        <div class="price">Rp35.000</div>
+      </div>
+    </div>
+
+    <div class="flex-item">
+        <img src="produk/4.jpg" alt="Item 4">
+        <div class="info">
+          <div class="name">Suntung Garo Rica</div>
+          <div class="price">Rp30.000</div>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <img src="produk/5.jpg" alt="Item 5">
+        <div class="info">
+          <div class="name">Tanawan Garampati Ikan Tuna</div>
+          <div class="price">Rp45.000</div>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <img src="produk/6.jpg" alt="Item 6">
+        <div class="info">
+          <div class="name">Ifamoy Kenari Goreng</div>
+          <div class="price">Rp27.000</div>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <img src="produk/7.jpg" alt="Item 7">
+        <div class="info">
+          <div class="name">Kenari Keripik</div>
+          <div class="price">Rp20.000</div>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <img src="produk/8.jpg" alt="Item 8">
+        <div class="info">
+          <div class="name">Tanawan Kenari Krispy</div>
+          <div class="price">Rp35.000</div>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <img src="produk/9.jpg" alt="Item 9">
+        <div class="info">
+          <div class="name">Pakesang Roasted Kenari</div>
+          <div class="price">Rp25.000</div>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <img src="produk/10.jpg" alt="Item 10">
+        <div class="info">
+          <div class="name">Pakesang Kopi Rempah Creamer</div>
+          <div class="price">Rp82.000</div>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <img src="produk/11.jpg" alt="Item 11">
+        <div class="info">
+          <div class="name">Pakesang Kopi Rempah No Sugar</div>
+          <div class="price">Rp38.000</div>
+        </div>
+      </div>
+
+      <div class="flex-item">
+        <img src="produk/12.jpg" alt="Item 12">
+        <div class="info">
+          <div class="name">Pakesang Kopi Rempah Original</div>
+          <div class="price">Rp82.000</div>
+        </div>
+      </div>
+    <!-- Add more flex items as needed -->
+  </div>
+    <br><br>
+    <div class="pagination" id="pagination">
+        <a href="#" class="prev" id="prev">Prev</a>
+        <a href="index1.html" class="page active">1</a>
+        <a href="index2.html" class="page">2</a>
+        <a href="index3.html" class="page">3</a>
+        <a href="index4.html" class="page">4</a>
+        <a href="index5.html" class="page">5</a>
+        <a href="#" class="next" id="next">Next</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+<br>
+<footer>
+    <p>Hak Cipta &copy; 2023 UKM Mart. Semua Hak Dilindungi.</p>
+</footer>
+
+<script type="text/javascript">
+  window.addEventListener('scroll', function(){
+      var scroll = document.querySelector('.scrollTop');
+      scroll.classList.toggle("active" , window.scrollY > 500)
+  })
+  
+  function scrollToTop(){
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      })
+  }
+  </script>
+</html>
